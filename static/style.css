@@ -1,0 +1,40 @@
+body {
+    font-family: -apple-system, sans-serif;
+    margin: 20px;
+    background: #fff;
+}
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px 0;
+}
+input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    font-size: 16px;
+}
+button {
+    padding: 12px 24px;
+    background: #FF6B35;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+}
+#places {
+    text-align: left;
+    margin-top: 20px;
+}
+#places li {
+    padding: 10px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    margin: 5px 0;
+}

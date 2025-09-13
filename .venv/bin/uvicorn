@@ -1,0 +1,7 @@
+#!/Users/n.dolgih86gmail.ru/PycharmProjects/PythonProject/roadtop_miniapp/.venv/bin/python
+import sys
+from uvicorn.main import main
+if __name__ == '__main__':
+    if sys.argv[0].endswith('.exe'):
+        sys.argv[0] = sys.argv[0][:-4]
+    sys.exit(main())

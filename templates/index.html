@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>RoadTop</title>
+    <link rel="stylesheet" href="/static/style.css" />
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=a933ce6a-5442-49f3-9a79-60b4af347285" type="text/javascript"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>📍 RoadTop</h1>
+        <p>Введи адрес — построим маршрут</p>
+
+        <div class="input-group">
+            <input type="text" id="from-input" placeholder="Откуда (адрес, город)" />
+            <input type="text" id="to-input" placeholder="Куда (адрес, город)" />
+            <button onclick="buildRoute()">Построить маршрут</button>
+        </div>
+
+        <div id="map" style="height: 400px; border-radius: 12px; background: #f0f0f0;"></div>
+
+        <button onclick="loadNearbyPlaces()">🔍 Показать топ-места рядом</button>
+        <ul id="places"></ul>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,9 @@
+pydantic
+fastapi
+uvicorn
+python-telegram-bot
+aiosqlite
+python-dotenv
+jinja2
+passlib[bcrypt]
+python-multipart
