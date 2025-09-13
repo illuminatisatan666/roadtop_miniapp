@@ -9,7 +9,7 @@ load_dotenv()
 TOKEN = os.getenv("TELEGRAM_TOKEN")
 
 async def start(update: Update, context: ContextTypes.DEFAULT_TYPE):
-    keyboard = [[InlineKeyboardButton("📍 Открыть RoadTop", web_app={"url": os.getenv("WEB_APP_URL", "https://roadtop.onrender.com")})]]
+    keyboard = [[InlineKeyboardButton("📍 Открыть RoadTop", web_app={"url": os.getenv("WEB_APP_URL", "https://roadtop-miniapp.onrender.com")})]]
     reply_markup = InlineKeyboardMarkup(keyboard)
     await update.message.reply_text(
         "🌟 **RoadTop** — топовые места в пути.\n\n"
